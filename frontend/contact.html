@@ -544,7 +544,7 @@
 	<script>
 		$("#contact_form").submit(function(e){
 			e.preventDefault();
-            contact_field
+            
 			var name_field_value = document.getElementById("name_field").value;
             var contact_field_value = document.getElementById("contact_field").value;
 			var email_field_value = document.getElementById("email_field").value;
@@ -557,7 +557,7 @@
 
 			$.ajax({
 				type : 'POST',
-				url : "http://127.0.0.1:8000/contact/",
+				url : "http://143.110.248.80:8000/contact/",
 				data : {"name" : name_field_value,"contact":contact_field_value, "email":email_field_value, "message":message_field_value },
 				success: function (response){
 					if(response["valid"]){

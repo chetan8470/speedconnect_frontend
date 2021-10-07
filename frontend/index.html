@@ -660,7 +660,7 @@ ple-touch-icon" href="images/icon.png">
 			console.log("pincode : ", pincode_field_value);
 			$.ajax({
 				type : 'GET',
-				url : "http://127.0.0.1:8000/pincode/",
+				url : "http://143.110.248.80:8000/pincode/",
 				data : {"pincode" : pincode_field_value},
 				success: function (response){
 					if(response["valid"]){
